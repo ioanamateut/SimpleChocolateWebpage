@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+<title>
+  Chocolate Box
+</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+<link href='https://fonts.googleapis.com/css?family=Sansita%20Swashed' rel='stylesheet'>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js.js"></script>
+<script src="sort.js"></script>
+<style type="text/css">
+  .lista>* {
+    display: none
+  }
+
+  .lista>*:first-child {
+    display: block
+  }
+</style>
+</head>
+
+<body class="bg-class h-100">
+  <header>
+    <h1>Chocolate Box</h1>
+    <img src="images/icon.png" class="header-img m-5" alt="Logo">
+
+  </header>
+  <nav class="col-3 col-s-12">
+
+    <ul id="menu">
+      <li><a href="homepage.html"><i class="fas fa-home"></i>Home</a></li>
+      <li><a href="login.html" title="Log in"><i class="far fa-user"></i>Log in</a></li>
+      <li><a href="register.html" title="Register"><i class="fas fa-user"></i>Register</a></li>
+      <li><a href="shop.html" title="Shop"><i class="fas fa-shopping-basket"></i>Shop</a></li>
+      <li><a href="slider.html" title="Feedback"><i class="shopping-basket"></i>Gallery</a></li>
+      <li><a href="feedback.html" title="Feedback"><i class="shopping-basket"></i>Feedback</a></li>
+
+
+    </ul>
+
+
+  </nav>
+  <main class="col-9 col-s-12">
+    <h2><strong>About us</strong></h2>
+    <ol>
+
+      <p>This is a site for chocholate lovers..
+      </p>
+
+
+    </ol>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="images/chocolate2.jpg" style="width: 50%;">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/pralines2.jpg" style="width:50%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="images/truffes2.jpg" style="width:50%">
+      </div>
+    </div>
+    <br>
+
+    <div>
+      <select id="secunde" style="width: 20%;">
+        <option value="1">1 secunda</option>
+        <option value="3">3 secunde</option>
+        <option value="5">5 secunde</option>
+      </select>
+
+      <button onclick="start()">Play/Pause</button>
+
+    </div>
+  </main>
+
+
+
+  <p>In tabelul de mai jos puteti vedea produsele noastre:</p>
+
+
+  <table id="myTable">
+    <tr>
+      <th>Nume</th>
+      <th>Tip</th>
+    </tr>
+    <tr>
+      <td>Kit-Kat</td>
+      <td>napolitana</td>
+    </tr>
+    <tr>
+      <td>Lindt</td>
+      <td>praline</td>
+    </tr>
+    <tr>
+      <td>Guylian</td>
+      <td>praline</td>
+    </tr>
+    <tr>
+      <td>Toblerone</td>
+      <td>ciocolata</td>
+    </tr>
+    <tr>
+      <td>Milka</td>
+      <td>ciocolata</td>
+    </tr>
+    <tr>
+      <td>Leonidas</td>
+      <td>truffes</td>
+    </tr>
+
+
+  </table>
+
+
+
+  <ul type="1" style="color: #f4fdbe;">
+    <p>Lista:</p>
+    <li>
+      <div>Milka</div>
+      <details>
+        <summary>detalii</summary>
+        <ul>
+          <li id="showMe" class="hidden">Ingrediente Milka: zahăr, unt de cacao, lapte praf degresat, masă cacao, zer
+            praf
+            (din lapte), grăsime din lapte, pastă de alune, emulsifianți (lecitină din soia, E476),
+            aromă. Ciocolata cu lapte conține substanță uscată de cacao: 30% minimum.</li>
+        </ul>
+      </details>
+    </li>
+    <li id="showMe" class="hidden">
+      <div class="show">Lindt</div>
+      <details>
+        <summary>detalii</summary>
+        <ul>
+
+          <li id="showMe" class="hidden">
+            Informatii Lindt:
+            - Ciocolata cu lapte
+            - Calorii (100g): 537 kcal
+            - Carbohidrati (100g): 57 g
+            - Proteine (100g): 6.5
+          </li>
+
+          <li id="showMe" class="hidden"> Ingrediente Lindt - Ciocolata cu lapte
+            Zahar, Unt de cacao, Lapte praf integral,
+            MASA DE CACAO, LACTOSE (LACTOZA), Lapte praf degresat,
+            LECITINA, EXTRACT DE MALT, Extract de malt din orz, Arome</li>
+
+        </ul>
+      </details>
+    </li>
+    <li id="showMe" class="hidden">
+      <div class="show">Kit-Kat</div>
+      <details>
+        <summary>detalii</summary>
+        <ul>
+          <li id="showMe" class="hidden">Informatii Kit Kat:
+            - Calorii (100g): 511 kcal
+            - Carbohidrati (100g): 60.8 g
+            - Proteine (100g): 1.7 g
+
+          </li>
+          <li id="showMe" class="hidden">
+            Ingrediente Kit Kat:
+            Zahar, Faina de grau, Lapte praf degresat, Unt de cacao, MASA DE CACAO, Grasime vegetala,
+            Zer praf, Grasimi din lapte, CACAO CU CONTINUT REDUS
+          </li>
+        </ul>
+      </details>
+    </li>
+  </ul>
+
+
+
+
+
+  <script src="js.js"></script>
+  <div class="row">
+    <div class="col-12">
+      <label><strong>Add a note</strong></label><br>
+      <textarea name="recomandare" cols="50" rows="10" disabled></textarea><br>
+    </div>
+  </div>
+
+
+  <p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+      <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" />
+    </a>
+  </p>
+
+  <footer id="footer-relative">
+    Chocolate Box © 2021
+  </footer>
+
+
+  <script type="text/javascript">
+    var slideIndex = 0;
+    showSlides();
+    var timer = null;
+
+    function start() {
+      if (timer) {
+        clearInterval(timer);
+        timer = null;
+      }
+      else {
+        var secunde = document.getElementById('secunde');
+        if (secunde.value == '1') timer = setInterval("showSlides()", 1000);
+        else if (secunde.value == '3') timer = setInterval("showSlides()", 3000);
+        else timer = setInterval("showSlides()", 5000);
+        showSlides();
+      }
+    }
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      slides[slideIndex - 1].style.display = "block";
+
+    }
+  </script>
+</body>
+
+</html>
