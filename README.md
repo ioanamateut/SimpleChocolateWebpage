@@ -1,2 +1,2 @@
 # SimpleChocolateWebpage
-O incercare de website cu mai multe functionalitati primite ca si task-uri 
+Just a simple website with functionalities received as tasks in the University.
